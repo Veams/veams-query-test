@@ -1,0 +1,24 @@
+
+/* ===================================================
+VEAMS SETTINGS
+=================================================== */
+$min-width: false; // This variable will be used in veams-sass
+
+@import "../../bower-components/neat/app/assets/stylesheets/neat-helpers";
+/* ===================================================
+BOURBON NEAT SETTINGS
+=================================================== */
+$column: 73px;
+$gutter: 22px;
+$grid-columns: 12;
+$max-width: 1138px;
+
+// Define Your Breakpoints For Bourbon Neat
+$bp-tablet-l: new-breakpoint(max-width 1024px 12);
+$bp-tablet-p: new-breakpoint(max-width 768px 12);
+$bp-mobile-l: new-breakpoint(max-width 657px 12);
+$bp-mobile-p: new-breakpoint(max-width 480px 8);
+$bp-mobile-s: new-breakpoint(max-width 320px 8);
+
+
+

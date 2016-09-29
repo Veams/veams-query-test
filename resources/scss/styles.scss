@@ -1,0 +1,40 @@
+/* ===================================================
+Main File For Imports
+=================================================== */
+
+// Helpers
+@import "../bower-components/bourbon/app/assets/stylesheets/bourbon";
+
+// Reset (veams-reset or veams-normalize)
+@import "../bower-components/veams-sass/resources/scss/veams-reset";
+
+// Global Variables and Settings
+@import "global/_vars";
+@import "../bower-components/veams-sass/resources/scss/veams"; 
+@import "../bower-components/neat/app/assets/stylesheets/neat"; 
+
+// Icons
+@import "icons/**/*";
+
+// Mixins
+@import "utils/mixins/**/*";
+
+// Extends
+@import "utils/extends/**/*";
+
+// Globals
+@import "global/_base";
+
+@import "global/_get-media";
+
+// Regions in Layouts
+@import "layouts/**/*";
+
+// Components
+@import "components/**/*";
+
+// Blocks
+@import "blocks/**/*";
+
+// Print
+@import "global/_print";

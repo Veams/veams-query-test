@@ -1,0 +1,28 @@
+{
+  "name": "veams-utility-storage",
+  "version": "1.0.1",
+  "authors": [
+    "Andy Gutsche <andy.gutsche@aperto.de>"
+  ],
+  "description": "Offers a simple API for storing Javascript objects in HTML5 web storage",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Veams/veams-utility-storage"
+  },
+  "homepage": "https://github.com/Veams/veams-utility-storage",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "30c9378b17d455135eca4f59120a5f75bc4bb334"
+  },
+  "_source": "https://github.com/Veams/veams-utility-storage.git",
+  "_target": "^1.0.1",
+  "_originalSource": "veams-utility-storage",
+  "_direct": true
+}
