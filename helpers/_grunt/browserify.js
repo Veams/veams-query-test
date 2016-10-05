@@ -26,7 +26,7 @@ module.exports = {
 				}
 			]
 		],
-		ignore: ['jquery']
+		ignore: ['jquery', 'underscore']
 	},
 	vendor: {
 		src: ['.'],
