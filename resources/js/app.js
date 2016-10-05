@@ -1,8 +1,8 @@
 import Helpers from './utils/helpers';
 import EVENTS from './utils/events';
-import vQuery from './utils/vquery/vquery';
+import VeamsQuery from './utils/veams-query/veams-query';
 
-const $ = vQuery;
+const $ = VeamsQuery;
 const Exoskeleton = require('exoskeleton');
 Exoskeleton.View = require('backbone.nativeview');
 Exoskeleton.ajax = require('backbone.nativeajax');
