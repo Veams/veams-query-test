@@ -106,8 +106,8 @@ let VeamsQueryObject = function (selector, context) {
 		return;
 	}
 
-	// plain dom node
-	if (selector.nodeType) {
+	// plain dom node or window object
+	if (selector.nodeType || selector === window) {
 		this.nodes.push(selector);
 
 		return;
@@ -133,21 +133,25 @@ let VeamsQueryObject = function (selector, context) {
 
 	for (i; i < scope.length; i++) {
 
-		if (/^(#?[\w-]+|\.[\w-.]+)$/.test(selector)) {
-			switch (selector.charAt(0)) {
-				case '#':
-					this.nodes = this.nodes.concat([scope[i].getElementById(selector.substr(1))]);
-					break;
-				case '.':
-					let classes = selector.substr(1).replace(/\./g, ' ');
-					this.nodes = this.nodes.concat([].slice.call(scope[i].getElementsByClassName(classes)));
-					break;
-				default:
-					this.nodes = this.nodes.concat([].slice.call(scope[i].getElementsByTagName(selector)));
+		try {
+			if (/^(#?[\w-]+|\.[\w-.]+)$/.test(selector)) {
+				switch (selector.charAt(0)) {
+					case '#':
+						this.nodes = this.nodes.concat([scope[i].getElementById(selector.substr(1))]);
+						break;
+					case '.':
+						let classes = selector.substr(1).replace(/\./g, ' ');
+						this.nodes = this.nodes.concat([].slice.call(scope[i].getElementsByClassName(classes)));
+						break;
+					default:
+						this.nodes = this.nodes.concat([].slice.call(scope[i].getElementsByTagName(selector)));
+				}
 			}
-		}
-		else {
-			this.nodes = this.nodes.concat([].slice.call(scope[i].querySelectorAll(selector)));
+			else {
+				this.nodes = this.nodes.concat([].slice.call(scope[i].querySelectorAll(selector)));
+			}
+		} catch (e) {
+			console.warn('VeamsQuery says: "', e, '"');
 		}
 	}
 
