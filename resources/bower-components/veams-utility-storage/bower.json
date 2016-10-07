@@ -1,8 +1,8 @@
 {
 	"name": "veams-utility-storage",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"authors": [
-		"Andy Gutsche <andy.gutsche@aperto.de>"
+		"Andy Gutsche <andy@veams.org>"
 	],
 	"description": "Offers a simple API for storing Javascript objects in HTML5 web storage",
 	"ignore": [

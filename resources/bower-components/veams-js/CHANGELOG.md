@@ -1,3 +1,6 @@
+### v3.6.0
+- remove addClass, removeClass and hasClass from Helpers
+
 ### v3.5.0
 - use real random values (crypto) for Helpers.makeId
 

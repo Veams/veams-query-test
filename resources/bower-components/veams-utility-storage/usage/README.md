@@ -3,6 +3,9 @@
 This component is based on the blueprint of Veams-Components.
 It offers a simple API for storing Javascript objects in HTML5 web storage
 
+## Requirements
+- babel-preset-stage-0
+
 ## Usage
 
 Just initialize on demand.
@@ -51,16 +54,18 @@ Just initialize on demand.
 
 #### Import
 ``` js
+// @INSERT :: START @tag: js-import
 import Storage from './modules/storage/storage';
+// @INSERT :: END
 ```
 
 #### Initializing
 ``` js
 /**
-* Init storage
+* Init storage (on demand)
 */
 let myStorage = new Storage({
-	type: 'permanent' // or 'session',
+	type: 'permanent', // or 'session'
 	name: 'someName' // custom namespace (e.g. from module)
 });
 ```

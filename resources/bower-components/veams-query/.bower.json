@@ -1,6 +1,6 @@
 {
   "name": "veams-query",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Represents a very simple DOM API for Veams-JS (incl. ajax support)",
   "main": "veams-query.js",
   "authors": [
@@ -23,14 +23,13 @@
     "test",
     "tests"
   ],
-  "_release": "1.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.1",
-    "commit": "d8e205f04f4efa0678971d944b4ed503fffda3dc"
+    "tag": "v1.0.2",
+    "commit": "c0b373f16cb0580f0f8c9cf09848002374fd3ddf"
   },
   "_source": "https://github.com/Veams/veams-query.git",
   "_target": "^1.0.1",
-  "_originalSource": "veams-query",
-  "_direct": true
+  "_originalSource": "veams-query"
 }
