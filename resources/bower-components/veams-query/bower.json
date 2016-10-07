@@ -1,0 +1,26 @@
+{
+	"name": "veams-query",
+	"version": "1.0.1",
+	"description": "Represents a very simple DOM API for Veams-JS (incl. ajax support)",
+	"main": "veams-query.js",
+	"authors": [
+		"Andy Gutsche"
+	],
+	"license": "MIT",
+	"keywords": [
+		"veams-generator",
+		"veams-components",
+		"veams-sass",
+		"veams-js",
+		"veams",
+		"mangony"
+	],
+	"homepage": "https://github.com/Veams/veams-query",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

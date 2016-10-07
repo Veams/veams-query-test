@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 		'sass:docs',
 		'express:dev',
 		'open:dev',
-		'watch'
+		'chokidar'
 	]);
 	
 	grunt.registerTask('build', [

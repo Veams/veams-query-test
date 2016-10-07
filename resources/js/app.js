@@ -1,6 +1,6 @@
 import Helpers from './utils/helpers';
 import EVENTS from './utils/events';
-import VeamsQuery from './utils/veams-query/veams-query';
+import VeamsQuery from '../bower-components/veams-query/veams-query';
 
 const $ = VeamsQuery;
 const Exoskeleton = require('exoskeleton');

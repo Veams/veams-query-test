@@ -2,7 +2,7 @@
  * Represents a very simple DOM API for Veams-JS (incl. ajax support)
  *
  * @module VeamsQuery
- * @version v1.0.0
+ * @version v1.0.1
  *
  * @author Andy Gutsche
  */
@@ -23,7 +23,7 @@ let VeamsQuery = function (selector, context) {
 
 
 // VeamsQuery version
-VeamsQuery.version = 'v1.0.0';
+VeamsQuery.version = 'v1.0.1';
 
 
 /**
@@ -201,7 +201,9 @@ VeamsQueryObject.prototype.is = function (selector) {
 	}
 
 	for (i; i < this.nodes.length; i++) {
-		if ((this.nodes[i].matches || this.nodes[i].matchesSelector || this.nodes[i].msMatchesSelector || this.nodes[i].mozMatchesSelector || this.nodes[i].webkitMatchesSelector || this.nodes[i].oMatchesSelector).call(this.nodes[i], selector)) {
+		if ((this.nodes[i].matches || this.nodes[i].matchesSelector || this.nodes[i].msMatchesSelector ||
+				this.nodes[i].mozMatchesSelector || this.nodes[i].webkitMatchesSelector ||
+				this.nodes[i].oMatchesSelector).call(this.nodes[i], selector)) {
 			return true;
 		}
 	}
@@ -267,7 +269,8 @@ VeamsQueryObject.prototype.removeClass = function (classNames) {
 					this.nodes[i].classList.remove(classes[j]);
 				}
 				else {
-					this.nodes[i].className = this.nodes[i].className.replace(new RegExp("(^|\\s+)" + classes[j] + "(\\s+|$)"), ' ');
+					this.nodes[i].className =
+							this.nodes[i].className.replace(new RegExp("(^|\\s+)" + classes[j] + "(\\s+|$)"), ' ');
 				}
 
 				if (!this.nodes[i].className.length) {
@@ -383,7 +386,8 @@ VeamsQueryObject.prototype.after = function (element) {
 			this.nodes[i].insertAdjacentHTML('afterend', element);
 		}
 		else {
-			this.nodes[i].parentNode.insertBefore(element.nodes && element.nodes[0] || element, this.nodes[i].nextElementSibling);
+			this.nodes[i].parentNode.insertBefore(element.nodes && element.nodes[0] || element,
+					this.nodes[i].nextElementSibling);
 		}
 	}
 
