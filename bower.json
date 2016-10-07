@@ -1,12 +1,12 @@
 {
-  "version": "0.1.0",
-  "dependencies": {
-    "highlightjs": "~8.0.0",
-    "bourbon": "~4.2.4",
-    "neat": "~1.7.2",
-    "veams-js": "^3.2.0",
-    "veams-sass": "~2.0.3",
-    "veams-query": "^1.0.1"
-  },
-  "name": "veams-playground"
+	"version": "0.1.0",
+	"dependencies": {
+		"highlightjs": "~8.0.0",
+		"bourbon": "~4.2.4",
+		"neat": "~1.7.2",
+		"veams-js": "^3.2.0",
+		"veams-sass": "~2.0.3",
+		"veams-query": "^1.0.1"
+	},
+	"name": "veams-playground"
 }
