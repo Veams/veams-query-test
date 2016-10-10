@@ -7,6 +7,9 @@ import Helpers from './utils/helpers';
 
 import Slider from './modules/slider/slider';
 
+
+import CTA from './modules/cta/cta';
+
 // @INSERTPOINT :: @ref: js-import
 
 // Vars
@@ -55,6 +58,16 @@ class Core {
 	}
 
 	render(context) {
+
+/**
+ * Init Call-To-Action
+ */
+Helpers.loadModule({
+	domName: 'cta',
+	module: CTA,
+	context: context
+});
+
 		// @INSERTPOINT :: @ref: js-init-v3
 
 		Helpers.loadModule({

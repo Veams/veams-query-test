@@ -1,0 +1,34 @@
+{
+  "name": "veams-component-cta",
+  "version": "1.1.5",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json"
+  ],
+  "authors": [
+    {
+      "name": "Sebastian Fitzner",
+      "email": "sebastian@veams.org"
+    },
+    {
+      "name": "Andy Gutsche",
+      "email": "andy@veams.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Veams/veams-component-cta.git"
+  },
+  "homepage": "https://github.com/Veams/veams-component-cta",
+  "_release": "1.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.5",
+    "commit": "99b1f7493913275c4c7582d33c72cec0c8410c63"
+  },
+  "_source": "https://github.com/Veams/veams-component-cta.git",
+  "_target": "^1.1.5",
+  "_originalSource": "veams-component-cta",
+  "_direct": true
+}

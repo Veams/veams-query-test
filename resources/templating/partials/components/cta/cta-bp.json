@@ -1,0 +1,27 @@
+{
+	"simple": {
+		"ctaButton": false,
+		"ctaTarget": "#",
+		"ctaContextClass": "link",
+		"ctaClass": "class",
+		"ctaIcon": true,
+		"ctaContent": "content"
+	},
+	"withJs": {
+		"ctaButton": true,
+		"ctaTarget": "#",
+		"ctaContextClass": "default",
+		"ctaClass": "class",
+		"ctaIcon": true,
+		"ctaContent": "content",
+		"ctaJsAtom": false,
+		"ctaJsModule": true,
+		"jsOptions": [
+			{
+				"jsObject": false,
+				"jsKey": "",
+				"jsValue": ""
+			}
+		]
+	}
+}

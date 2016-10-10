@@ -104,30 +104,3 @@ Context: Default
 .c-slider--default {
 	@extend %float;
 }
-
-/* ===================================================
-CTA :: Attention, please add this to _c-cta.scss
-=================================================== */
-
-.c-cta--slider {
-	/*
-	Local Vars
-	----------------------- */
-	$color-red-cta: #f061b9;
-
-	/*
-	Standard styles
-	----------------------- */
-	@include reset-btn();
-
-	background-color: $color-red-cta;
-	position: absolute;
-
-	&.is-previous {
-		left: 0;
-	}
-
-	&.is-next {
-		right: 0;
-	}
-}

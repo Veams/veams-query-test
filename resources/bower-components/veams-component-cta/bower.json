@@ -1,0 +1,23 @@
+{
+	"name": "veams-component-cta",
+	"version": "1.1.5",
+	"ignore": [
+		".bowerrc",
+		".gitignore",
+		"bower.json"
+	],
+	"authors": [
+		{
+			"name": "Sebastian Fitzner",
+			"email": "sebastian@veams.org"
+		},
+		{
+			"name": "Andy Gutsche",
+			"email": "andy@veams.org"
+		}
+	],
+	"repository": {
+	  "type": "git",
+	  "url": "git://github.com/Veams/veams-component-cta.git"
+	}
+}

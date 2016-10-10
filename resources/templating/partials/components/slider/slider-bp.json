@@ -2,13 +2,7 @@
 	"simple": {
 		"sliderOptions": {
 			"contextClass": "default",
-			"classes": "is-bg-highlight-1",
-			"jsOptions": [
-				{
-					"jsKey": "",
-					"jsValue": ""
-				}
-			]
+			"classes": "is-bg-highlight-1"
 		},
 		"sliderCta": [
 			{

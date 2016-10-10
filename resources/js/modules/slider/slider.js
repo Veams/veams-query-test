@@ -380,7 +380,7 @@ class Slider extends AppModule {
 			this.$ribbon.css('transition', this.transition);
 		}
 
-		this.$ribbon.css('left', -obj.idx * (this.thumbWidth));
+		this.$ribbon.css('left', -obj.idx * (this.thumbWidth) + 'px');
 	}
 
 	/**
@@ -423,11 +423,12 @@ class Slider extends AppModule {
 	addPagination() {
 		let paginationItem = 'data-js-atom="slider-pagination-item"';
 		let paginationItemClass = 'slider__pagination-list-item';
+		let tmpl = '';
+		let i = 0;
 
-		// Todo: Refactor for veamsQuery
-		let tmpl = this.$items.map((i) => {
-			return $('<li class="' + paginationItemClass + '" ' + paginationItem + '><strong>' + (i + 1) + '</strong></li>')[0];
-		});
+		for (i; i < this.$items.length; i++) {
+			tmpl += '<li class="' + paginationItemClass + '" ' + paginationItem + '><strong>' + (i + 1) + '</strong></li>';
+		}
 
 		this.$paginationList.append(tmpl);
 		this.$paginationItems = $('[' + paginationItem + ']', this.$el);
@@ -653,11 +654,11 @@ class Slider extends AppModule {
 	getAndSetDimensions() {
 		this.width = this.$el.outerWidth();
 		this.thumbWidth = this.width / this.visibles;
-		this.$wrapper.css('width', this.width);
-		this.$items.css('width', this.thumbWidth);
+		this.$wrapper.css('width', this.width + 'px');
+		this.$items.css('width', this.thumbWidth + 'px');
 
 		this.$ribbon.css({
-			'width': this.getRibbonWidth()
+			width: this.getRibbonWidth() + 'px'
 		});
 	}
 
