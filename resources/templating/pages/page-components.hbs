@@ -8,6 +8,23 @@ sortOrder: 02
 	{{#content "main"}}
 		<h3>Place your components here!</h3>
 
+
+{{! wrapWith START: Slider }}
+{{#with slider-bp.simple}}
+	{{#wrapWith "c-slider" data=this.sliderOptions}}
+		{{#wrapWith "c-slider__item"}}
+			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+		{{/wrapWith}}
+		{{#wrapWith "c-slider__item"}}
+			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+		{{/wrapWith}}
+		{{#wrapWith "c-slider__item"}}
+			<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
+		{{/wrapWith}}
+	{{/wrapWith}}
+{{/with}}
+{{! wrapWith END: Slider}}
+
 		{{! @INSERTPOINT :: @ref: component-partial }}
 	{{/content}}
 {{/extend}}

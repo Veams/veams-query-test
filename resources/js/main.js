@@ -4,6 +4,9 @@ import Helpers from './utils/helpers';
 
 // ES6 Modules
 // import Storage from './modules/storage/storage';
+
+import Slider from './modules/slider/slider';
+
 // @INSERTPOINT :: @ref: js-import
 
 // Vars
@@ -35,7 +38,9 @@ class Core {
 
 		// Redirect
 		App.Vent.on(App.EVENTS.DOMredirect, (obj) => {
-			if (!obj && !obj.url) throw new Error('Object is not defined. Please provide an url in your object!');
+			if (!obj && !obj.url) {
+				throw new Error('Object is not defined. Please provide an url in your object!');
+			}
 
 			// Redirect to page
 			window.location.href = String(obj.url);
@@ -51,6 +56,12 @@ class Core {
 
 	render(context) {
 		// @INSERTPOINT :: @ref: js-init-v3
+
+		Helpers.loadModule({
+			domName: 'slider',
+			module: Slider,
+			context: context
+		});
 
 		// App.$.ajax({
 		// 	url: 'ajax/test.json',
