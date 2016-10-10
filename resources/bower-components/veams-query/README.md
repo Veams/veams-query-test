@@ -4,16 +4,29 @@ Represents a very simple DOM API for Veams-JS (incl. ajax support)
 
 ## Version
 
-Latest version is ```v1.0.3```
+Latest version is ```v1.1.0```
 
 ## Getting started
+
+### Installation
+
+```
+bower install veams-query --save
+```
+
+### Import
+
+Use relative path to your bower components folder
+
+_Example:_
+
 ``` js
-import VeamsQuery from './path-to-veams-query/veams-query';
+import VeamsQuery from '../bower-components/veams-query/veams-query';
 ```
 
 ## Usage
 
-Documentation of all static and member functions below
+Documentation of all functions (Selector, support and DOM)
 
 ### Selector function
 
@@ -27,7 +40,7 @@ Documentation of all static and member functions below
  */
 ```
 
-### Static functions
+### Support functions
 
 #### VeamsQuery.parseHTML( htmlString:string )
 ``` js
@@ -53,7 +66,7 @@ Documentation of all static and member functions below
  */
 ```
 
-### Member functions
+### DOM functions
 
 #### .find( selector:string|object )
 ``` js
