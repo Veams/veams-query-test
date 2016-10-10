@@ -423,7 +423,6 @@ class Slider extends AppModule {
 	addPagination() {
 		let paginationItem = 'data-js-atom="slider-pagination-item"';
 		let paginationItemClass = 'slider__pagination-list-item';
-		let i = 0;
 
 		// Todo: Refactor for veamsQuery
 		let tmpl = this.$items.map((i) => {
