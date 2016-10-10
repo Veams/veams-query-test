@@ -59,10 +59,8 @@ VeamsQuery.ajax = function (opts) {
 		type: opts.type || 'GET',
 		url: opts.url,
 		dataType: opts.dataType || 'text',
-		success: opts.success || function () {
-		},
-		error: opts.error || function () {
-		},
+		success: opts.success || function () {},
+		error: opts.error || function () {}
 	};
 
 	request = new XMLHttpRequest();
