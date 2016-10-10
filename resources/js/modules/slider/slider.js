@@ -421,7 +421,9 @@ class Slider extends AppModule {
 	 * save a pagination item reference.
 	 */
 	addPagination() {
+		// todo: define in options
 		let paginationItem = 'data-js-atom="slider-pagination-item"';
+		// todo: define in options
 		let paginationItemClass = 'slider__pagination-list-item';
 		let tmpl = '';
 		let i = 0;
