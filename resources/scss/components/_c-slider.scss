@@ -103,4 +103,6 @@ Context: Default
 --------------------------------------------------- */
 .c-slider--default {
 	@extend %float;
+
+	width: 980px;
 }
