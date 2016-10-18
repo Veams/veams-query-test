@@ -1,0 +1,30 @@
+{
+  "name": "veams-component-slide-fox",
+  "version": "1.0.4",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json"
+  ],
+  "authors": [
+    {
+      "name": "Sebastian Fitzner",
+      "email": "sebastian@veams.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Veams/veams-component-slide-fox.git"
+  },
+  "homepage": "https://github.com/Veams/veams-component-slide-fox",
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.4",
+    "commit": "be25f5f18a9b736d134b4b77676ba529a1d6da28"
+  },
+  "_source": "https://github.com/Veams/veams-component-slide-fox.git",
+  "_target": "^1.0.4",
+  "_originalSource": "veams-component-slide-fox",
+  "_direct": true
+}

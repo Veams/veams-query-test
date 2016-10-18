@@ -6,12 +6,9 @@ import Helpers from './utils/helpers';
 // import Storage from './modules/storage/storage';
 
 import Slider from './modules/slider/slider';
-
-
 import CTA from './modules/cta/cta';
-
-
 import Overlay from './modules/overlay/overlay';
+import SlideFox from './modules/slide-fox/slide-fox';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -76,6 +73,17 @@ class Core {
 			module: CTA,
 			context: context
 		});
+
+
+		/**
+		 * Init Form
+		 */
+		Helpers.loadModule({
+			domName: 'slide-fox',
+			module: SlideFox,
+			context: context
+		});
+
 
 		// @INSERTPOINT :: @ref: js-init-v3
 

@@ -9,22 +9,54 @@ sortOrder: 02
 
 	{{! wrapWith START: Slider }}
 		<!--{{#with slider-bp.simple}}-->
-			<!--{{#wrapWith "c-slider" settings=this.settings content=this.content}}-->
+				<!--{{#wrapWith "c-slider" settings=this.settings content=this.content}}-->
 				<!--{{#wrapWith "c-slider__item"}}-->
-					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+		<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
 				<!--{{/wrapWith}}-->
 				<!--{{#wrapWith "c-slider__item"}}-->
-					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+		<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
 				<!--{{/wrapWith}}-->
 				<!--{{#wrapWith "c-slider__item"}}-->
-					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+		<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
 				<!--{{/wrapWith}}-->
-			<!--{{/wrapWith}}-->
-		<!--{{/with}}-->
+				<!--{{/wrapWith}}-->
+				<!--{{/with}}-->
 		{{! wrapWith END: Slider}}
 
-		{{#with cta-bp.withJs}}
-			{{> c-cta }}
+				<!--{{#with cta-bp.withJs}}-->
+		<!--{{> c-cta }}-->
+				<!--{{/with}}-->
+
+		{{#with slide-fox-bp}}
+			{{> c-slide-fox }}
+		{{/with}}
+
+
+		<h2>We need some demo text to see the slide fox in action!</h2>
+		{{#times 20}}
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque
+				necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi
+				exercitationem facilis ipsum labore nobis odit.</p>
+		{{/times}}
+
+		{{#with slide-fox-bp}}
+			{{#wrapWith "c-slide-fox"}}
+				<a href="#">Link to another page.</a>
+			{{/wrapWith}}
+		{{/with}}
+
+
+		<h2>We need some demo text to see the slide fox in action!</h2>
+		{{#times 20}}
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque
+				necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi
+				exercitationem facilis ipsum labore nobis odit.</p>
+		{{/times}}
+
+		{{#with slide-fox-bp}}
+			{{#wrapWith "c-slide-fox"}}
+				<a href="#">Link to another page.</a>
+			{{/wrapWith}}
 		{{/with}}
 
 	{{! @INSERTPOINT :: @ref: component-partial }}
