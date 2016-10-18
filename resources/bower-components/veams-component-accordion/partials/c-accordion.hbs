@@ -1,0 +1,12 @@
+{{!
+---
+component: accordion
+---
+}}
+
+<div class="c-accordion{{#if options.data.contextClass}}--{{options.data.contextClass}}{{else}}--default{{/if}}{{#if options.data.classes}} {{options.data.classes}}{{/if}}"
+     data-css="c-accordion" data-js-module="accordion"{{#if options.data.jsOptions}} data-js-options='{
+     {{#each options.data.jsOptions}}"{{jsKey}}": {{#unless jsObject}}"{{/unless}}{{{jsValue}}}{{#unless jsObject}}"{{/unless}}{{#if @last}}{{else}}, {{/if}}{{/each}}
+     }'{{/if}}>
+	{{{yield}}}
+</div>

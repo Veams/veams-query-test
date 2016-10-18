@@ -27,37 +27,63 @@ sortOrder: 02
 		<!--{{> c-cta }}-->
 				<!--{{/with}}-->
 
-		{{#with slide-fox-bp}}
-			{{> c-slide-fox }}
-		{{/with}}
+
+		<!--<h2>We need some demo text to see the slide fox in action!</h2>-->
+				<!--{{#times 20}}-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque-->
+		<!--necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi-->
+		<!--exercitationem facilis ipsum labore nobis odit.</p>-->
+				<!--{{/times}}-->
+
+				<!--{{#with slide-fox-bp}}-->
+				<!--{{#wrapWith "c-slide-fox"}}-->
+		<!--<a href="#">Link to another page.</a>-->
+				<!--{{/wrapWith}}-->
+				<!--{{/with}}-->
 
 
-		<h2>We need some demo text to see the slide fox in action!</h2>
-		{{#times 20}}
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque
-				necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi
-				exercitationem facilis ipsum labore nobis odit.</p>
-		{{/times}}
+		<!--<h2>We need some demo text to see the slide fox in action!</h2>-->
+				<!--{{#times 20}}-->
+		<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque-->
+		<!--necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi-->
+		<!--exercitationem facilis ipsum labore nobis odit.</p>-->
+				<!--{{/times}}-->
 
-		{{#with slide-fox-bp}}
-			{{#wrapWith "c-slide-fox"}}
-				<a href="#">Link to another page.</a>
-			{{/wrapWith}}
-		{{/with}}
+				<!--{{#with slide-fox-bp}}-->
+				<!--{{#wrapWith "c-slide-fox"}}-->
+		<!--<a href="#">Link to another page.</a>-->
+				<!--{{/wrapWith}}-->
+				<!--{{/with}}-->
 
 
-		<h2>We need some demo text to see the slide fox in action!</h2>
-		{{#times 20}}
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque
-				necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi
-				exercitationem facilis ipsum labore nobis odit.</p>
-		{{/times}}
+		<!--{{#with accordion-bp.simple}}-->
+		<!--{{! WrapWith START: Accordion }}-->
+			<!--{{#wrapWith "c-accordion" settings=this.settings}}-->
+			<!--{{! WrapWith START: Item }}-->
+				<!--{{#wrapWith "c-accordion__item" accItemId="test-1" accButton="Item 1"}}-->
+					<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.-->
+				<!--{{/wrapWith}}-->
+				<!--{{#wrapWith "c-accordion__item" accItemId="test-2" accButton="Item 2"}}-->
+					<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.-->
+				<!--{{/wrapWith}}-->
+			<!--{{! WrapWith END: Item }}-->
+			<!--{{/wrapWith}}-->
+		<!--{{! WrapWith END: Accordion }}-->
+		<!--{{/with}}-->
 
-		{{#with slide-fox-bp}}
-			{{#wrapWith "c-slide-fox"}}
-				<a href="#">Link to another page.</a>
-			{{/wrapWith}}
-		{{/with}}
+		<!--{{#with accordion-bp.custom}}-->
+		<!--{{! WrapWith START: Accordion }}-->
+			<!--{{#wrapWith "c-accordion" settings=this.settings}}-->
+			<!--{{! WrapWith START: Item }}-->
+				<!--{{#wrapWith "c-accordion__item" accItemId="test-3" accButton="Item 3"}}-->
+					<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.-->
+				<!--{{/wrapWith}}-->
+				<!--{{#wrapWith "c-accordion__item" accItemId="test-4" accButton="Item 4"}}-->
+					<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid assumenda, ducimus facilis inventore iste labore laborum libero nam necessitatibus neque nulla numquam perspiciatis rem, repudiandae sed soluta veniam vero.        {{/wrapWith}}-->
+			<!--{{! WrapWith END: Item }}-->
+			<!--{{/wrapWith}}-->
+		<!--{{! WrapWith END: Accordion }}-->
+		<!--{{/with}}-->
 
 	{{! @INSERTPOINT :: @ref: component-partial }}
 	{{/content}}

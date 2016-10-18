@@ -9,6 +9,7 @@ import Slider from './modules/slider/slider';
 import CTA from './modules/cta/cta';
 import Overlay from './modules/overlay/overlay';
 import SlideFox from './modules/slide-fox/slide-fox';
+import Accordion from './modules/accordion/accordion';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -66,32 +67,41 @@ class Core {
 	render(context) {
 
 		/**
-		 * Init Call-To-Action
+		 * Init Accordion
 		 */
 		Helpers.loadModule({
-			domName: 'cta',
-			module: CTA,
+			domName: 'accordion',
+			module: Accordion,
 			context: context
 		});
-
 
 		/**
-		 * Init Form
+		 * Init Call-To-Action
 		 */
-		Helpers.loadModule({
-			domName: 'slide-fox',
-			module: SlideFox,
-			context: context
-		});
-
-
-		// @INSERTPOINT :: @ref: js-init-v3
-
-		Helpers.loadModule({
-			domName: 'slider',
-			module: Slider,
-			context: context
-		});
+		// Helpers.loadModule({
+		// 	domName: 'cta',
+		// 	module: CTA,
+		// 	context: context
+		// });
+		//
+		//
+		// /**
+		//  * Init Form
+		//  */
+		// Helpers.loadModule({
+		// 	domName: 'slide-fox',
+		// 	module: SlideFox,
+		// 	context: context
+		// });
+		//
+		//
+		// // @INSERTPOINT :: @ref: js-init-v3
+		//
+		// Helpers.loadModule({
+		// 	domName: 'slider',
+		// 	module: Slider,
+		// 	context: context
+		// });
 
 		// App.$.ajax({
 		// 	url: 'ajax/test.json',

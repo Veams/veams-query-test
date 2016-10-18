@@ -42,6 +42,15 @@ EVENTS.overlay = {
 	open: 'overlay:open'
 };
 
+
+/**
+ * Events Accordion
+ */
+EVENTS.accordion = {
+	openAll: 'accordion:openAll',
+	closeAll: 'accordion:closeAll'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

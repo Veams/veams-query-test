@@ -1,0 +1,26 @@
+{
+	"simple": {
+		"accordionOptions": {
+			"contextClass": "default",
+			"classes": false
+		}
+	},
+	"custom": {
+		"accordionOptions": {
+			"contextClass": "custom",
+			"classes": "is-some-modifier",
+			"jsOptions": [
+				{
+					"jsKey": "openIndex",
+					"jsValue": 0,
+					"jsObject": true
+				},
+				{
+					"jsKey": "singleOpen",
+					"jsValue": true,
+					"jsObject": true
+				}
+			]
+		}
+	}
+}

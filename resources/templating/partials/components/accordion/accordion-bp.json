@@ -1,0 +1,26 @@
+{
+	"simple": {
+		"settings": {
+			"contextClass": "default",
+			"classes": false
+		}
+	},
+	"custom": {
+		"settings": {
+			"contextClass": "custom",
+			"classes": "is-some-modifier",
+			"jsOptions": [
+				{
+					"jsKey": "openIndex",
+					"jsValue": 0,
+					"jsObject": true
+				},
+				{
+					"jsKey": "singleOpen",
+					"jsValue": true,
+					"jsObject": true
+				}
+			]
+		}
+	}
+}
