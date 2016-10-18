@@ -1,0 +1,19 @@
+<div class="form__input">
+	<div class="form__label-wrapper">
+		<label for="{{id}}" class="form__input-label{{#if labelClasses}} {{labelClasses}}{{/if}}">
+			{{label}}{{#if required}} <abbr title="Required">*</abbr>{{/if}}
+		</label>
+	</div>
+	<div class="form__input-wrapper">
+		<input id="{{id}}" type="{{type}}" name="{{id}}" placeholder="{{placeholder}}"
+		{{#each attr}} {{attrKey}}="{{{attrValue}}}"{{/each}}
+		{{#if required}} required="required"{{/if}}
+		{{#if pattern}} pattern="{{{ pattern }}}"{{/if}}
+	class="form__input-text{{#if inputClasses}} {{inputClasses}}{{/if}}"/>
+	</div>
+	{{#if errorMessage}}
+		<div class="form__error" hidden="">
+			<p>{{errorMessage}}</p>
+		</div>
+	{{/if}}
+</div>

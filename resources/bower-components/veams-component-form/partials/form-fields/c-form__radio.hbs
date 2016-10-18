@@ -1,0 +1,18 @@
+<div class="form__radio">
+	<div class="form__label-wrapper">
+		<strong class="form__radio-legend">{{label}}{{#if required}} <abbr title="Required">*</abbr>{{/if}}</strong>
+	</div>
+	<div class="form__radio-wrapper">
+		<ul class="form__radio-list{{#if wrapperClass}} {{wrapperClass}}{{/if}}">
+			{{#each radios}}
+				<li class="form__radio-item">
+					<input id="{{id}}" name="{{../typeOf}}" type="radio"
+					{{#each dataAttr}} {{attrKey}}="{{{attrValue}}}"{{/each}}
+					{{#if ../required}} required="required"{{/if}}
+					class="form__radio-input{{#if inputClass}} {{inputClass}}{{/if}}"/>
+					<label for="{{id}}" class="form__radio-label{{#if labelClass}}{{labelClass}}{{/if}}">{{{label}}}</label>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>

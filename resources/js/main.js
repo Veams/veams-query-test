@@ -13,6 +13,9 @@ import Accordion from './modules/accordion/accordion';
 import EqualRows from './modules/equal-rows/equal-rows';
 import TypeAhead from './modules/type-ahead/views/type-ahead-view';
 
+
+import FormAjax from './modules/form/form-ajax';
+
 // @INSERTPOINT :: @ref: js-import
 
 // Vars
@@ -99,11 +102,21 @@ class Core {
 		/**
 		 * Init TypeAhead
 		 */
+		// Helpers.loadModule({
+		// 	domName: 'type-ahead',
+		// 	module: TypeAhead,
+		// 	context: context,
+		// 	render: false
+		// });
+
+
+		/**
+		 * Init Form
+		 */
 		Helpers.loadModule({
-			domName: 'type-ahead',
-			module: TypeAhead,
-			context: context,
-			render: false
+			domName: 'form-ajax',
+			module: FormAjax,
+			context: context
 		});
 
 		// @INSERTPOINT :: @ref: js-init-v3

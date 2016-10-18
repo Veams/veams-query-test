@@ -1,0 +1,78 @@
+/* ===================================================
+Component: Form
+=================================================== */
+
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-form"] {
+
+	/*
+	Fieldset & Legend
+	----------------------- */
+	.form__fieldset {}
+	.form__legend {}
+
+	/*
+	Cols & Rows
+	----------------------- */
+	.form__row {}
+	.form__col {}
+
+	/*
+	Labels & Types
+	----------------------- */
+	.form__label-wrapper {}
+
+	// Labels
+	.form__input-label {}
+
+	// Input
+	.form__input {}
+	.form__input-wrapper {}
+	.form__input-text {}
+
+	// Radio
+	.form__radio {}
+	.form__radio-wrapper {}
+	.form__radio-legend {}
+	.form__radio-list {}
+	.form__radio-item {}
+	.form__radio-input {}
+	.form__radio-label {}
+
+	// Select
+	.form__select {}
+	.form__select-wrapper {}
+	.form__select-label {}
+	.form__select-field {}
+
+	// Textarea
+	.form__textarea {}
+	.form__textarea-wrapper {}
+	.form__textarea-label {}
+	.form__textarea-input {}
+
+	// Checkbox
+	.form__checkbox {}
+	.form__checkbox-wrapper {}
+	.form__checkbox-legend {}
+	.form__checkbox-item {}
+	.form__checkbox-input {}
+	.form__checkbox-label {}
+
+	// Submit
+	.form__submit {}
+	.form__submit-text {}
+
+	/*
+	Error
+	----------------------- */
+	.form__error {}
+}
+
+
+/* ---------------------------------------------------
+Context: Default
+--------------------------------------------------- */
+.c-form--default {}

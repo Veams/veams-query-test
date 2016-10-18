@@ -67,6 +67,15 @@ EVENTS.typeAhead = {
 	search: 'typeAhead:search'
 };
 
+
+/**
+ * Events Form
+ */
+EVENTS.form = {
+	complete: 'form:complete',
+	reset: 'form:reset'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

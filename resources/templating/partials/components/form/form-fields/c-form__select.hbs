@@ -1,0 +1,17 @@
+<div class="form__select">
+	<div class="form__label-wrapper">
+		<label for="{{id}}" class="form__select-label">
+			{{label}}{{#if required}} <abbr title="Required">*</abbr>{{/if}}
+		</label>
+	</div>
+	<div class="form__select-wrapper">
+		<select id="{{id}}"{{#if jsModule}} data-js-module="dropdown"{{/if}} class="form__select-field{{#if class}} {{class}}{{/if}}" name="{{id}}"
+		{{#each dataAttr}} {{attrKey}}="{{{attrValue}}}"{{/each}}
+		{{#if required}} required="required"{{/if}}
+		>
+		{{#each option}}
+			<option value="{{val}}"{{#if disabled}} disabled{{/if}}{{#if selected}} selected{{/if}}>{{name}}</option>
+		{{/each}}
+		</select>
+	</div>
+</div>
