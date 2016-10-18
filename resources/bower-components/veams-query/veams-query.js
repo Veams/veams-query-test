@@ -634,6 +634,22 @@ VeamsQueryObject.prototype.outerHeight = function (includeMargin) {
 
 
 /**
+ *  Get the current coordinates of the first element in the set of matched elements,
+ *  relative to the document
+ *
+ * @return {Object} - offset (offset.top, offset.left)
+ */
+VeamsQueryObject.prototype.offset = function () {
+	var rect = this[0].getBoundingClientRect();
+
+	return {
+		top: rect.top + document.body.scrollTop,
+		left: rect.left + document.body.scrollLeft
+	};
+};
+
+
+/**
  * Get the current computed width for the first element in the set of matched elements, including padding,
  * border and optionally margin
  *
@@ -694,6 +710,28 @@ VeamsQueryObject.prototype.prop = function (propName, propVal) {
 
 	for (i; i < this.length; i++) {
 		this[i][propName] = propVal;
+	}
+
+	return this;
+};
+
+
+/**
+ * Get the current value of the first element in the set of matched elements.
+ * Set the value of each element in the set of matched elements
+ *
+ * @param {String} [val] - value
+ * @return {String|Number|Array|Object} - value | VeamsQuery object
+ */
+VeamsQueryObject.prototype.val = function (val) {
+	var i = 0;
+
+	if (!val) {
+		return this[0].value;
+	}
+
+	for (i; i < this.length; i++) {
+		this[i].value = val;
 	}
 
 	return this;

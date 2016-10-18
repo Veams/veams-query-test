@@ -59,6 +59,14 @@ EVENTS.equalRows = {
 	render: 'equalRows:render'
 };
 
+
+/**
+ * Events TypeAhead
+ */
+EVENTS.typeAhead = {
+	search: 'typeAhead:search'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

@@ -1,0 +1,23 @@
+{
+	"name": "veams-component-type-ahead",
+	"version": "2.0.0",
+	"ignore": [
+		".bowerrc",
+		".gitignore",
+		"bower.json"
+	],
+	"authors": [
+		{
+			"name": "Sebastian Fitzner",
+			"email": "sebastian@veams.org"
+		},
+		{
+			"name": "Andy Gutsche",
+			"email": "andy@veams.org"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Veams/veams-component-type-ahead.git"
+	}
+}

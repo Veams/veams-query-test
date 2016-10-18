@@ -11,6 +11,7 @@ import Overlay from './modules/overlay/overlay';
 import SlideFox from './modules/slide-fox/slide-fox';
 import Accordion from './modules/accordion/accordion';
 import EqualRows from './modules/equal-rows/equal-rows';
+import TypeAhead from './modules/type-ahead/views/type-ahead-view';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -55,7 +56,7 @@ class Core {
 		/**
 		 * Init Overlay
 		 */
-		new Overlay();
+		// new Overlay();
 
 		// @INSERTPOINT :: @ref: js-init-once-v3
 
@@ -80,18 +81,29 @@ class Core {
 		/**
 		 * Init EqualRows
 		 */
+		// Helpers.loadModule({
+		// 	domName: 'equal-rows',
+		// 	module: EqualRows,
+		// 	render: false,
+		// 	cb: function (module, options) {
+		// 		if (options && options.delayInit) {
+		// 			$(window).load(function () {
+		// 				module._reinit(module);
+		// 			});
+		// 		}
+		// 	},
+		// 	context: context
+		// });
+
+
+		/**
+		 * Init TypeAhead
+		 */
 		Helpers.loadModule({
-			domName: 'equal-rows',
-			module: EqualRows,
-			render: false,
-			cb: function (module, options) {
-				if (options && options.delayInit) {
-					$(window).load(function () {
-						module._reinit(module);
-					});
-				}
-			},
-			context: context
+			domName: 'type-ahead',
+			module: TypeAhead,
+			context: context,
+			render: false
 		});
 
 		// @INSERTPOINT :: @ref: js-init-v3

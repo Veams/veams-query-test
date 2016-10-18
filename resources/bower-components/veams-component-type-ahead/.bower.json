@@ -1,0 +1,34 @@
+{
+  "name": "veams-component-type-ahead",
+  "version": "2.0.0",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json"
+  ],
+  "authors": [
+    {
+      "name": "Sebastian Fitzner",
+      "email": "sebastian@veams.org"
+    },
+    {
+      "name": "Andy Gutsche",
+      "email": "andy@veams.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Veams/veams-component-type-ahead.git"
+  },
+  "homepage": "https://github.com/Veams/veams-component-type-ahead",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.0",
+    "commit": "419f38a7a638091959eff537e071ad54311bb46d"
+  },
+  "_source": "https://github.com/Veams/veams-component-type-ahead.git",
+  "_target": "^2.0.0",
+  "_originalSource": "veams-component-type-ahead",
+  "_direct": true
+}
