@@ -34,6 +34,14 @@ const EVENTS = {
 	swipe: 'swipe'
 };
 
+
+/**
+ * Events Overlay
+ */
+EVENTS.overlay = {
+	open: 'overlay:open'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

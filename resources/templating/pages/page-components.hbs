@@ -8,20 +8,24 @@ sortOrder: 02
 	{{#content "main"}}
 
 	{{! wrapWith START: Slider }}
-		{{#with slider-bp.simple}}
-			{{#wrapWith "c-slider" settings=this.settings content=this.content}}
-				{{#wrapWith "c-slider__item"}}
-					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-				{{/wrapWith}}
-				{{#wrapWith "c-slider__item"}}
-					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-				{{/wrapWith}}
-				{{#wrapWith "c-slider__item"}}
-					<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">
-				{{/wrapWith}}
-			{{/wrapWith}}
+		<!--{{#with slider-bp.simple}}-->
+			<!--{{#wrapWith "c-slider" settings=this.settings content=this.content}}-->
+				<!--{{#wrapWith "c-slider__item"}}-->
+					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+				<!--{{/wrapWith}}-->
+				<!--{{#wrapWith "c-slider__item"}}-->
+					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+				<!--{{/wrapWith}}-->
+				<!--{{#wrapWith "c-slider__item"}}-->
+					<!--<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=980%C3%97600&w=980&h=600" alt="test">-->
+				<!--{{/wrapWith}}-->
+			<!--{{/wrapWith}}-->
+		<!--{{/with}}-->
+		{{! wrapWith END: Slider}}
+
+		{{#with cta-bp.withJs}}
+			{{> c-cta }}
 		{{/with}}
-	{{! wrapWith END: Slider}}
 
 	{{! @INSERTPOINT :: @ref: component-partial }}
 	{{/content}}

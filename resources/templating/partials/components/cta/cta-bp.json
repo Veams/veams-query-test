@@ -18,9 +18,14 @@
 		"ctaJsModule": true,
 		"jsOptions": [
 			{
-				"jsObject": false,
-				"jsKey": "",
-				"jsValue": ""
+				"jsKey": "globalEvent",
+				"jsValue": "overlay:open",
+				"jsObject": false
+			},
+			{
+				"jsKey": "data",
+				"jsValue": "<span>blakeks</span>",
+				"jsObject": false
 			}
 		]
 	}

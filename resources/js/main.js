@@ -10,6 +10,9 @@ import Slider from './modules/slider/slider';
 
 import CTA from './modules/cta/cta';
 
+
+import Overlay from './modules/overlay/overlay';
+
 // @INSERTPOINT :: @ref: js-import
 
 // Vars
@@ -49,6 +52,12 @@ class Core {
 			window.location.href = String(obj.url);
 		});
 
+
+		/**
+		 * Init Overlay
+		 */
+		new Overlay();
+
 		// @INSERTPOINT :: @ref: js-init-once-v3
 
 	}
@@ -59,14 +68,14 @@ class Core {
 
 	render(context) {
 
-/**
- * Init Call-To-Action
- */
-Helpers.loadModule({
-	domName: 'cta',
-	module: CTA,
-	context: context
-});
+		/**
+		 * Init Call-To-Action
+		 */
+		Helpers.loadModule({
+			domName: 'cta',
+			module: CTA,
+			context: context
+		});
 
 		// @INSERTPOINT :: @ref: js-init-v3
 
