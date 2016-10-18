@@ -1,0 +1,19 @@
+{
+	"name": "veams-component-equal-rows",
+	"version": "1.0.6",
+	"ignore": [
+		".bowerrc",
+		".gitignore",
+		"bower.json"
+	],
+	"authors": [
+		{
+			"name": "Sebastian Fitzner",
+			"email": "sebastian@veams.org"
+		}
+	],
+	"repository": {
+	  "type": "git",
+	  "url": "git://github.com/Veams/veams-component-equal-rows.git"
+	}
+}

@@ -10,6 +10,7 @@ import CTA from './modules/cta/cta';
 import Overlay from './modules/overlay/overlay';
 import SlideFox from './modules/slide-fox/slide-fox';
 import Accordion from './modules/accordion/accordion';
+import EqualRows from './modules/equal-rows/equal-rows';
 
 // @INSERTPOINT :: @ref: js-import
 
@@ -69,11 +70,31 @@ class Core {
 		/**
 		 * Init Accordion
 		 */
+		// Helpers.loadModule({
+		// 	domName: 'accordion',
+		// 	module: Accordion,
+		// 	context: context
+		// });
+
+
+		/**
+		 * Init EqualRows
+		 */
 		Helpers.loadModule({
-			domName: 'accordion',
-			module: Accordion,
+			domName: 'equal-rows',
+			module: EqualRows,
+			render: false,
+			cb: function (module, options) {
+				if (options && options.delayInit) {
+					$(window).load(function () {
+						module._reinit(module);
+					});
+				}
+			},
 			context: context
 		});
+
+		// @INSERTPOINT :: @ref: js-init-v3
 
 		/**
 		 * Init Call-To-Action
@@ -94,8 +115,6 @@ class Core {
 		// 	context: context
 		// });
 		//
-		//
-		// // @INSERTPOINT :: @ref: js-init-v3
 		//
 		// Helpers.loadModule({
 		// 	domName: 'slider',

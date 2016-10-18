@@ -51,6 +51,14 @@ EVENTS.accordion = {
 	closeAll: 'accordion:closeAll'
 };
 
+
+/**
+ * Events EqualRows
+ */
+EVENTS.equalRows = {
+	render: 'equalRows:render'
+};
+
 // @INSERTPOINT :: @ref: js-events
 
 export default EVENTS;

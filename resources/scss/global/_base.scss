@@ -32,3 +32,17 @@ body {
 	border-radius: 10px;
 	border: 10px solid red;
 }
+
+.is-grid-33 {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	background-color: red;
+	border: 1px solid black;
+
+	@include bp($bp-mobile-l) {
+		display: block;
+		margin-right : 0;
+	}
+}
