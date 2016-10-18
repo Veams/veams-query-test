@@ -2,7 +2,7 @@
  * Represents a very simple DOM API for Veams-JS (incl. ajax support)
  *
  * @module VeamsQuery
- * @version v1.4.1
+ * @version v1.5.0
  *
  * @author Andy Gutsche
  */
@@ -23,7 +23,7 @@ var VeamsQuery = function (selector, context) {
 
 
 // VeamsQuery version
-VeamsQuery.version = 'v1.4.1';
+VeamsQuery.version = 'v1.5.0';
 
 /**
  * Return DOM element created from given HTML string
@@ -611,6 +611,7 @@ VeamsQueryObject.prototype.css = function (cssProp, cssVal) {
 	return this;
 };
 
+
 /**
  *  Get the current computed height for the first element in the set of matched elements, including padding,
  *  border and optionally margin
@@ -634,22 +635,6 @@ VeamsQueryObject.prototype.outerHeight = function (includeMargin) {
 
 
 /**
- *  Get the current coordinates of the first element in the set of matched elements,
- *  relative to the document
- *
- * @return {Object} - offset (offset.top, offset.left)
- */
-VeamsQueryObject.prototype.offset = function () {
-	var rect = this[0].getBoundingClientRect();
-
-	return {
-		top: rect.top + document.body.scrollTop,
-		left: rect.left + document.body.scrollLeft
-	};
-};
-
-
-/**
  * Get the current computed width for the first element in the set of matched elements, including padding,
  * border and optionally margin
  *
@@ -668,6 +653,22 @@ VeamsQueryObject.prototype.outerWidth = function (includeMargin) {
 	width += parseInt(style.marginLeft) + parseInt(style.marginRight);
 
 	return width;
+};
+
+
+/**
+ *  Get the current coordinates of the first element in the set of matched elements,
+ *  relative to the document
+ *
+ * @return {Object} - offset (offset.top, offset.left)
+ */
+VeamsQueryObject.prototype.offset = function () {
+	var rect = this[0].getBoundingClientRect();
+
+	return {
+		top: rect.top + document.body.scrollTop,
+		left: rect.left + document.body.scrollLeft
+	};
 };
 
 
