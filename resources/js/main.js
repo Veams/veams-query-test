@@ -74,11 +74,11 @@ class Core {
 		/**
 		 * Init Accordion
 		 */
-		// Helpers.loadModule({
-		// 	domName: 'accordion',
-		// 	module: Accordion,
-		// 	context: context
-		// });
+		Helpers.loadModule({
+			domName: 'accordion',
+			module: Accordion,
+			context: context
+		});
 
 
 		/**
@@ -113,11 +113,11 @@ class Core {
 		/**
 		 * Init Form
 		 */
-		Helpers.loadModule({
-			domName: 'form-ajax',
-			module: FormAjax,
-			context: context
-		});
+		// Helpers.loadModule({
+		// 	domName: 'form-ajax',
+		// 	module: FormAjax,
+		// 	context: context
+		// });
 
 		// @INSERTPOINT :: @ref: js-init-v3
 

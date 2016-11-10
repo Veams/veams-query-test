@@ -23,7 +23,7 @@ var $ = App.$;
 class Accordion extends AppModule {
 	constructor(obj) {
 		let options = {
-			openIndex: false,
+			openIndex: null,
 			openOnViewports: [
 				'desktop',
 				'tablet-large',
@@ -39,7 +39,8 @@ class Accordion extends AppModule {
 			dataMaxAttr: 'data-js-height',
 			accordionBtn: '[data-js-atom="accordion-btn"]',
 			accordionContent: '[data-js-atom="accordion-content"]',
-			tabMode: false
+			tabMode: false,
+			openByHash: false
 		};
 
 		super(obj, options);
@@ -100,6 +101,18 @@ class Accordion extends AppModule {
 		this.$target = null;
 		this.$btn = null;
 
+		if (this.options.openByHash) {
+			let idx = this.getIndexByHash();
+
+			this.openIndex = typeof idx === 'number' ? idx : this.options.openIndex;
+		}
+		else if (this.options.tabMode && !this.options.openIndex) {
+			this.openIndex = 0;
+		}
+		else {
+			this.openIndex = this.options.openIndex;
+		}
+
 		// call super
 		super.initialize();
 	}
@@ -112,9 +125,14 @@ class Accordion extends AppModule {
 		let fnHandleClick = this.handleClick.bind(this);
 		let fnCloseAll = this.closeAll.bind(this);
 		let fnOpenAll = this.openAll.bind(this);
+		let fnOnHashChange = this.onHashChange.bind(this);
 
 		// Local events
 		this.$el.on(Helpers.clickHandler(), this.options.accordionBtn, fnHandleClick);
+
+		if (this.options.openByHash) {
+			$(window).on(App.EVENTS.hashchange, fnOnHashChange);
+		}
 
 		// Global events
 		App.Vent.on(App.EVENTS.resize, fnRender);
@@ -133,16 +151,60 @@ class Accordion extends AppModule {
 		this.closeAll();
 
 		// Open on index if set in options
-		if (typeof this.options.openIndex === 'number') {
+		if (typeof this.openIndex === 'number') {
 
 			if (this.options.tabMode || this.options.openOnViewports.indexOf(App.currentMedia) !== -1) {
-				this.activateBtn(this.$accordionBtns.eq(this.options.openIndex));
-				this.slideDown(this.$accordionContents.eq(this.options.openIndex));
+				this.activateBtn(this.$accordionBtns.eq(this.openIndex));
+				this.slideDown(this.$accordionContents.eq(this.openIndex));
 			}
 		}
 
 		if (this.$el.hasClass(this.options.unresolvedClass)) {
 			this.$el.removeClass(this.options.unresolvedClass);
+		}
+	}
+
+	/**
+	 * Get index of accordion content referenced by hash
+	 *
+	 * @return {number|boolean} - index of element or false if no match
+	 */
+	getIndexByHash() {
+		let hash = document.location.hash.split('#');
+		let retVal = false;
+		let i = 0;
+
+		if (hash < 2) {
+			return false;
+		}
+
+		for (i; i < this.$accordionContents.length; i++) {
+			if (this.$accordionContents[i].id === hash[1]) {
+				retVal = i;
+				break;
+			}
+		}
+
+		return retVal;
+	}
+
+	/**
+	 * Open accordion content referenced by hash
+	 *
+	 * @param {object} e - event object
+	 */
+	onHashChange(e) {
+		let idx = this.getIndexByHash();
+
+		if (typeof idx === 'number') {
+
+			if (this.options.singleOpen) {
+				this.closeAll();
+			}
+
+			this.activateBtn(this.$accordionBtns.eq(idx));
+			this.slideDown(this.$accordionContents.eq(idx));
+
 		}
 	}
 
